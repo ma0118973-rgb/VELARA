@@ -1,0 +1,9 @@
+{
+  "name": "gemini-neon-project",
+  "version": "1.0.0",
+  "description": "Netlify site with Neon DB and Gemini API",
+  "dependencies": {
+    "pg": "^8.11.3",
+    "@google/generative-ai": "^0.1.0"
+  }
+}
