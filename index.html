@@ -1,100 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <meta name="theme-color" content="#1e1b4b" />
-    
-    <!-- HIGH IMPACT SEO & META TAGS -->
-    <title>VELARA | USA Jobs, Visa Guide & Movie Reviews 2026</title>
-    <meta name="description" content="Find Visa Sponsorship Jobs in USA, UK & Canada. Read latest 2026 Movie Reviews (Marvel, DC, Avatar 3). Expert Immigration guides for H1B, F1, and Tourist Visas.">
-    
-    <!-- KEYWORDS: Based on high-volume Google Searches -->
-    <meta name="keywords" content="Visa Sponsorship Jobs USA, H1B Lottery 2026, Canada Immigration News, Remote Jobs for Foreigners, Avengers Secret Wars Leaks, Batman Part 2 Review, Tech News 2026, High Paying Jobs without Degree, Work from Home Jobs">
-    
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Velara Global Media">
-    <link rel="canonical" href="https://velara.netlify.app" />
-
-    <!-- OPEN GRAPH (Social Media Sharing) -->
-    <meta property="og:title" content="VELARA | Jobs, News & Entertainment">
-    <meta property="og:description" content="Daily updates on Visa Sponsorship Jobs, Immigration Hacks, and Pop Culture.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200">
-    <meta property="og:url" content="https://velara.netlify.app">
-    <meta property="og:type" content="website">
-
-    <!-- PERFORMANCE: DNS Prefetch & Preconnect -->
-    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    
-    <!-- CRITICAL CSS -->
-    <style>
-      body { margin: 0; background-color: #f8fafc; font-family: sans-serif; }
-      #root { min-height: 100vh; }
-      /* Accessibilty: Skip to content */
-      .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: white; padding: 8px; z-index: 100; transition: top 0.3s; }
-      .skip-link:focus { top: 0; }
-    </style>
-
-    <!-- Tailwind CSS -->
+    <link rel="icon" type="image/svg+xml" href="https://vitejs.dev/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VELARA | Admin Panel</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            colors: {
-              primary: '#4f46e5',
-              secondary: '#7c3aed',
-            },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-              display: ['Cinzel', 'serif'],
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Inter"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#1a1a1a',
+                gold: '#c5a059',
+                gray: '#f4f4f4'
+              }
             }
           }
         }
       }
     </script>
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <style>
-      /* Mobile Optimization */
-      button, a { min-height: 48px; min-width: 48px; touch-action: manipulation; }
-      img { content-visibility: auto; max-width: 100%; height: auto; display: block; }
+      body {
+        background-color: #f8fafc;
+      }
+      .prose h2 { font-size: 1.5rem; font-weight: 700; margin-top: 1.5em; margin-bottom: 0.5em; color: #111827; }
+      .prose p { margin-bottom: 1em; line-height: 1.75; color: #374151; }
     </style>
-
   <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
     "react/": "https://esm.sh/react@^19.2.4/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-Dh1nhAsc.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Boonz8P7.css">
+<link rel="stylesheet" href="/index.css">
 </head>
   <body>
-            <div id="root"></div>
-        <script>
-      if (!window.originalFetch) {
-          window.originalFetch = window.fetc; }
-      window.fetch = async (...args) => {
-          if (typeof args[0] === 'string' && (args[0].includes('generate') || args[0].includes('ai'))) {
-              return window.originalFetch('/functions/generate', args[1]);
-          }
-          return window.originalFetch(...args);
-      };
-      console.log("VELARA Bridge Active");
-        </script>
-        
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
