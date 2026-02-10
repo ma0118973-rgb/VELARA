@@ -85,20 +85,16 @@
   <link rel="stylesheet" crossorigin href="/assets/index-Boonz8P7.css">
 </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to content</a>
-    <div id="root"></div><script>
-  // AI ko jagane ka tarika
-  window.originalFetch = window.fetch;
-  window.fetch = async (...args) => {
-    if (args[0].includes('generate') || args[0].includes('ai')) {
-      return window.originalFetch('/functions/generate', args[1]);
-    }
-    return window.originalFetch(...args);
-  };
-
-  // Images ko database se dhoondne ka tarika
-  console.log("VELARA Database & AI Bridge Active");
-    </script>
-    
-  </body>
-</html>
+            <div id="root"></div>
+        <script>
+      if (!window.originalFetch) {
+          window.originalFetch = window.fetc; }
+      window.fetch = async (...args) => {
+          if (typeof args[0] === 'string' && (args[0].includes('generate') || args[0].includes('ai'))) {
+              return window.originalFetch('/functions/generate', args[1]);
+          }
+          return window.originalFetch(...args);
+      };
+      console.log("VELARA Bridge Active");
+        </script>
+        
